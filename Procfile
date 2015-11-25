@@ -1,0 +1,1 @@
+web: gunicorn clicktocoffee.wsgi --log-file -

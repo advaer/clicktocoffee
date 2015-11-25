@@ -1,0 +1,388 @@
+{% extends 'site/base.html' %}
+{% block content %}
+{% load staticfiles %}
+<!-- Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1>Click to <span class="brand-heading">Coffee</span></h1>
+                        <p class="intro-text">Any Coffee Recipe in a Couple of Clicks</p>
+                        <a href="#services" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Services Section -->
+<div id="services" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>The Most Advanced <strong>Coffee Machine</strong> Ever Built</h2>
+      <hr>
+      </div>
+    <div class="space"></div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 service"> <i class="fa fa-bar-chart"></i>
+        <h4><strong>Innovative Design</strong></h4>
+        <p>Innovative brewer design and granular control over half a dozen parameters in the espresso process gives you the options to make your perfect cup, every time.</p>
+      </div>
+      <div class="col-md-4 col-sm-6 service"> <i class="fa fa-male"></i>
+        <h4><strong>Profile Integration</strong></h4>
+        <p>Profile integration repeats the recipe you love with precision and allows you to experiment with other variations without the fear of losing the settings you’ve mastered once.</p>
+      </div>
+      <div class="col-md-4 col-sm-6 service"> <i class="fa fa-diamond"></i>
+        <h4><strong>Unique Taste</strong></h4>
+        <p>The second independent contour gives flexibility to avoid the aftertaste from a previous cup during that busy morning rush.</p>
+      </div>
+    <!--
+      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-bullseye"></i>
+        <h4><strong>Marketing</strong></h4>
+        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
+      </div>
+    -->
+    </div>
+  </div>
+</div>
+<!-- Portfolio Section -->
+<div id="works">
+  <div class="container"> <!-- Container -->
+    <div class="section-title text-center center">
+      <h2>Hot <strong>News</strong></h2>
+      <hr>
+      <div class="clearfix"></div>
+      <p>Click to Coffee team on World Maker Faire 2015 New York</p>
+    </div>
+  <!--
+    <div class="categories">
+      <ul class="cat">
+        <li>
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">All</a></li>
+            <li><a href="#" data-filter=".web">Web Design</a></li>
+            <li><a href="#" data-filter=".app">App Development</a></li>
+            <li><a href="#" data-filter=".branding">Branding</a></li>
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+  -->
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href={% static "img/portfolio/01.jpg"%} title="Prototype" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Coffee Machine</h4>
+                <small>Prototype</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src={% static "img/portfolio/01.jpg"%} class="img-responsive" alt="Coffee Machine"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href={% static "img/portfolio/02.jpg"%} title="Click to Coffee" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Founder</h4>
+                <small>Click to Coffee</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src={% static "img/portfolio/02.jpg"%} class="img-responsive" alt="Founder"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href={% static "img/portfolio/03.jpg"%} title="Behind the Curtains" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>How Does It Work?</h4>
+                <small>Behind the Curtains</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src={% static "img/portfolio/03.jpg"%} class="img-responsive" alt="Founder"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href={% static "img/portfolio/04.jpg"%} title="World Maker Faire, New York 2015" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Editor's Choice Blue Ribbon Winners</h4>
+                <small>World Maker Faire, New York 2015</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src={% static "img/portfolio/04.jpg"%} class="img-responsive" alt="Editor's Choice Blue Ribbon Winners"> </a> </div>
+          </div>
+        </div>
+     <!--
+        <div class="col-sm-6 col-md-3 col-lg-3 app">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/05.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>App Development</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/05.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 branding">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/06.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>Branding</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/06.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 branding app">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/07.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>App Development, Branding</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/07.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/08.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>Web Design</small>
+                <div class="clearfix"></div>
+                <i class="fa fa-search"></i> </div>
+              <img src="img/portfolio/08.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+      -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About Section -->
+
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Have you ever seen<strong> artisan barista at work</strong>?</h2>
+      <hr>
+      <p>It’s an art: every move is precise, the timing is perfect and the result is extraordinary. We followed the best baristas in the world to understand the intricate details that make a cup of coffee irresistible.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6"> <img src={% static "img/about.png" %} class="img-responsive"> </div>
+      <div class="col-md-6">
+        <div class="about-text">
+          <i class="fa fa-check-square-o"></i>
+          <div class="padding-left"><h4>Adjusting the grind size of coffee beans. Check!</h4>
+            <p></p></div>
+          <i class="fa fa-check-square-o"></i>
+          <div class="padding-left"><h4>Tamping the ground coffee in the porta-filter to allow light or full-body taste. Check!</h4>
+            <p></p></div>
+          <i class="fa fa-check-square-o"></i>
+          <div class="padding-left"><h4>Snapping it on the espresso group to preheat and release aroma. Check!</h4>
+            <p></p></div>
+          <i class="fa fa-check-square-o"></i>
+          <div class="padding-left"><h4>Play with steam pressure, timing, and water amount. <br>Triple check!</h4>
+            <p></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="achivements" class="section dark-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <div class="achivement-box">
+          <i class="fa fa-cogs"></i>
+          <span class="count">29</span>
+          <h4>adjustable parameters</h4>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="achivement-box">
+          <i class="fa fa-list-alt"></i>
+          <span class="count">1,130</span>
+          <h4>Coffee Recipes</h4>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="achivement-box">
+          <i class="fa fa-clock-o"></i>
+          <span class="count">50</span>
+          <h4>Cups per Hour</h4>
+        </div>
+      </div>
+      <!--<div class="col-md-3 col-sm-3">
+          <div class="achivement-box">
+              <i class="fa fa-trophy"></i>
+              <span class="count">25</span>
+              <h4>Awards won</h4>
+          </div>
+      </div>-->
+    </div>
+  </div>
+</div>
+<!-- Team Section -->
+<!--
+<div id="team" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Meet the <strong>team</strong></h2>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+    </div>
+    <div id="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail"> <img src="img/team/01.jpg" alt="..." class="img-circle team-img">
+          <div class="caption">
+            <h3>Jessica Wally</h3>
+            <p>CEO</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail"> <img src="img/team/02.jpg" alt="..." class="img-circle team-img">
+          <div class="caption">
+            <h3>Mike Sloan</h3>
+            <p>Web Designer</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail"> <img src="img/team/03.jpg" alt="..." class="img-circle team-img">
+          <div class="caption">
+            <h3>Michele Doe</h3>
+            <p>Web Designer</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail"> <img src="img/team/04.jpg" alt="..." class="img-circle team-img">
+          <div class="caption">
+            <h3>Larry Evans</h3>
+            <p>Project Manager</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<!-- Testimonials Section -->
+<!--
+<div id="testimonials" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>What <strong>clients</strong> say</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div id="testimonial" class="owl-carousel owl-theme">
+          <div class="item">       
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam.</p>
+            <p><strong>John DOE</strong>, CEO, Company.</p>
+          </div>
+          <div class="item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam.</p>
+            <p><strong>Jenny DOE</strong>, CEO, Company.</p>
+          </div>
+          <div class="item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam.</p>
+            <p><strong>John DOEn</strong>, CEO, Company.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<!-- Contact Section -->
+<div id="contact" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2><strong>Contact</strong> us</h2>
+      <hr>
+      <p>Stay tuned to our updates</p>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-4"> <i class="fa fa-facebook-official fa-2x"></i>
+        <p>facebook.com/clicktocoffee</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-envelope fa-2x"></i>
+        <p>info@clicktocoffee.com</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-twitter fa-2x"></i>
+        <p> @clicktocoffee</p>
+      </div>
+      <hr>
+      <div class="clearfix"></div>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <hr>
+      <h3>Leave us a message</h3>
+
+
+      <form name="sentMessage" id="contactForm" novalidate>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+          <p class="help-block text-danger"></p>
+        </div>
+        <div id="success"></div>
+        <button type="submit" class="btn btn-default">Send Message</button>
+      </form>
+
+
+
+    </div>
+  </div>
+</div>
+</div>
+<nav id="footer">
+  <div class="container">
+    <div class="pull-left fnav">
+      <p>Copyright &copy; 2015 Click to Coffee. Designed by <a href="http://www.templategarden.com" rel="nofollow" target="_blank">TemplateGarden</a>. Developed by <a href="http://advaer.com" rel="nofollow" target="_blank">Advaer Group</a>.</p>
+    </div>
+    <div class="pull-right fnav">
+      <ul class="footer-social">
+        <li><a href="http://facebook.com/clicktocoffee" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="http://twitter.com/clicktocoffee" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <!--
+        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        -->
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endblock %}
+
