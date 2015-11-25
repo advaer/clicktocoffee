@@ -339,6 +339,7 @@
 
 
       <form name="sentMessage" id="contactForm" novalidate>
+        {% csrf_token %}
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
