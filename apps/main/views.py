@@ -24,21 +24,16 @@ class SendMail(View):
         email = request.POST.get('email')
         name = request.POST.get('name')
         form_message = request.POST.get('message')
-        text_content = "Email: "+email+" Name: "+name+" Message: "+form_message
-        html_content = get_template('main/email/feedback.html').render(
-            Context(
-                {
-                    'email': email,
-                    'name': name,
-                    'message': form_message
-                }
-            )
-        )
+        ctx = Context({
+            'email': email,
+            'name': name,
+            'message': form_message
+        })
+        text_content = get_template('main/email/txt/feedback.txt').render(ctx)
+        html_content = get_template('main/email/html/feedback.html').render(ctx)
         from_email = "noreply@clicktocoffee.com"
         to_email = "rinat.advaer@gmail.com"
-        headers = {
-            'Reply-To': email
-        }
+        headers = {'Reply-To': email}
         msg = EmailMultiAlternatives(
             subject,
             text_content,
