@@ -7,10 +7,6 @@ from django.template.loader import get_template
 from django.template import Context
 
 
-class Index(TemplateView):
-    template_name = 'main/index.html'
-
-
 class SendMail(View):
     template_name = 'main/index.html'
 
